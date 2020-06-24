@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "529552487278",
+    "firebase_url": "https://tik-tok-toe-5ac10.firebaseio.com",
+    "project_id": "tik-tok-toe-5ac10",
+    "storage_bucket": "tik-tok-toe-5ac10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529552487278:android:a432682540f33efefe077f",
+        "android_client_info": {
+          "package_name": "com.example.gamettt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529552487278-qadoqgk9gp6atpn4dtlavi4t0fhjshue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC64l9Va9NYbc3UmDXIh_1f5JNDorNdG1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529552487278-qadoqgk9gp6atpn4dtlavi4t0fhjshue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
