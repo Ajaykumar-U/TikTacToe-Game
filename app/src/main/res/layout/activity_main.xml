@@ -11,26 +11,66 @@
         android:id="@+id/tvHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tik Tok Toe"
+        android:text="Tik Tac Toe"
         android:gravity="center"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:padding="10dp"
-        android:textStyle="bold"
         android:textColor="#fff"
         android:background="@android:color/holo_red_dark"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
+    <TextView
+        android:id="@+id/tvStatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Select Game Type?"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Single Player"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tvStatment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:text="Multi Player"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/btnAndroid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btnLayout"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
         android:background="@android:color/holo_red_dark"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvHeading"
+        app:layout_constraintTop_toBottomOf="@id/btnPlayer"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
@@ -213,33 +253,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/btnPlayer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Two Player's"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:textSize="18sp"
-        android:textColor="#fff"
-        android:background="@android:color/holo_red_dark"
-        app:layout_constraintTop_toBottomOf="@id/btnAndroid"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-    <Button
-        android:id="@+id/btnAndroid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Single Player"
-        android:layout_marginTop="50dp"
-        android:padding="10dp"
-        android:textSize="18sp"
-        android:textColor="#fff"
-        android:background="@android:color/holo_red_dark"
-        app:layout_constraintTop_toBottomOf="@id/btnLayout"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnPlayer,btnAndroid, btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
+    Button btnPlayer,btnAndroid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,15 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnPlayer = findViewById(R.id.btnPlayer);
         btnAndroid = findViewById(R.id.btnAndroid);
-        btn1 = findViewById(R.id.btn1);
-        btn2 = findViewById(R.id.btn2);
-        btn3 = findViewById(R.id.btn3);
-        btn4 = findViewById(R.id.btn4);
-        btn5 = findViewById(R.id.btn5);
-        btn6 = findViewById(R.id.btn6);
-        btn7 = findViewById(R.id.btn7);
-        btn8 = findViewById(R.id.btn8);
-        btn9 = findViewById(R.id.btn9);
 
         btnPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,62 +35,62 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn2.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn3.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn4.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn5.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn6.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn6).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn7.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn7).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn8.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn8).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
-        btn9.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn9).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showAlert();
+                toastingMessage();
             }
         });
     }
-    void showAlert(){
-        Toast.makeText(this, "Select Single/Two Players", Toast.LENGTH_SHORT).show();
+    void toastingMessage(){
+        Toast.makeText(getBaseContext(),"Select Player's Type?",Toast.LENGTH_LONG).show();
     }
 }

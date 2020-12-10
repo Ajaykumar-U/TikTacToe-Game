@@ -15,7 +15,6 @@ public class AndroidActivity extends AppCompatActivity {
 
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     TextView tvResult;
-    EditText etPlayerOne, etPlayerTwo;
     boolean btn1Clicked, btn2Clicked, btn3Clicked, btn4Clicked, btn5Clicked, btn6Clicked, btn7Clicked,
             btn8Clicked, btn9Clicked;
     boolean num = true;
@@ -23,11 +22,16 @@ public class AndroidActivity extends AppCompatActivity {
     static int sum;
     String playerOne, playerTwo;
     boolean btnOne,btnTwo,btnThree,btnFour,btnFive,btnSix,btnSeven,btnEight,btnNine;
+    //Game won Times
+    int p1=0,p2=0;
+    TextView androidWonTimes,playerWonTimes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android);
+        androidWonTimes = findViewById(R.id.tvAndroidGame);
+        playerWonTimes = findViewById(R.id.tvPlayerGame);
         tvResult = findViewById(R.id.res);
         btn1 = (Button) findViewById(R.id.btn1);
         btn2 = (Button) findViewById(R.id.btn2);
@@ -38,8 +42,6 @@ public class AndroidActivity extends AppCompatActivity {
         btn7 = (Button) findViewById(R.id.btn7);
         btn8 = (Button) findViewById(R.id.btn8);
         btn9 = (Button) findViewById(R.id.btn9);
-        etPlayerOne = findViewById(R.id.etPlayerOne);
-        etPlayerTwo = findViewById(R.id.etPlayerTwo);
 
         button1();
         button2();
@@ -77,6 +79,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn1.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn9.setTextColor(0xFF00FF00);
@@ -84,6 +88,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn1.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn9.setTextColor(0xFF00FF00);
@@ -102,6 +108,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn3.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn7.setTextColor(0xFF00FF00);
@@ -109,6 +117,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn3.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn7.setTextColor(0xFF00FF00);
@@ -127,6 +137,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn1.setTextColor(0xFF00FF00);
             btn2.setTextColor(0xFF00FF00);
             btn3.setTextColor(0xFF00FF00);
@@ -134,6 +146,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn1.setTextColor(0xFF00FF00);
             btn2.setTextColor(0xFF00FF00);
             btn3.setTextColor(0xFF00FF00);
@@ -152,6 +166,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn4.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn6.setTextColor(0xFF00FF00);
@@ -159,6 +175,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn4.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn6.setTextColor(0xFF00FF00);
@@ -177,6 +195,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn7.setTextColor(0xFF00FF00);
             btn8.setTextColor(0xFF00FF00);
             btn9.setTextColor(0xFF00FF00);
@@ -184,6 +204,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn7.setTextColor(0xFF00FF00);
             btn8.setTextColor(0xFF00FF00);
             btn9.setTextColor(0xFF00FF00);
@@ -202,6 +224,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn1.setTextColor(0xFF00FF00);
             btn4.setTextColor(0xFF00FF00);
             btn7.setTextColor(0xFF00FF00);
@@ -209,6 +233,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn1.setTextColor(0xFF00FF00);
             btn4.setTextColor(0xFF00FF00);
             btn7.setTextColor(0xFF00FF00);
@@ -227,6 +253,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn2.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn8.setTextColor(0xFF00FF00);
@@ -234,6 +262,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn2.setTextColor(0xFF00FF00);
             btn5.setTextColor(0xFF00FF00);
             btn8.setTextColor(0xFF00FF00);
@@ -252,6 +282,8 @@ public class AndroidActivity extends AppCompatActivity {
         }
         if (sum == 3) {
             tvResult.setText(playerOne);
+            ++p1;
+            androidWonTimes.setText("Android Points : "+p1);
             btn3.setTextColor(0xFF00FF00);
             btn6.setTextColor(0xFF00FF00);
             btn9.setTextColor(0xFF00FF00);
@@ -259,6 +291,8 @@ public class AndroidActivity extends AppCompatActivity {
             onResetGame();
         } else if (sum == 0) {
             tvResult.setText(playerTwo);
+            ++p2;
+            playerWonTimes.setText("Player Points : "+p2);
             btn3.setTextColor(0xFF00FF00);
             btn6.setTextColor(0xFF00FF00);
             btn9.setTextColor(0xFF00FF00);
@@ -318,7 +352,7 @@ public class AndroidActivity extends AppCompatActivity {
                 btnNine=false;
                 num=true;
             }
-        }, 1000);
+        }, 500);
     }
 
     boolean allClicked() {
